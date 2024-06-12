@@ -34,7 +34,9 @@ rm -f dism-offline.part2.rar
 rm -f dism-offline.part3.rar
 rm -f dism-offline.part4.rar
 rm -f dism-offline.part5.rar
-#wine "C:\windows\system32\dism.exe" /Get-ImageInfo /imagefile:"Z:\home\$USER\fr_windows_7_professional_with_sp1_x86_dvd_u_677092\sources\install.wim"
+#mkdir -p /home/andy/.dism/bin/
+#cp -R "/home/andy/.dism/drive_c/Program Files/Windows Kits/10/Assessment and Deployment Kit/Deployment Tools/x86/DISM/"* /home/$USER/.dism/bin/
+#wine "Z:\home\%USERNAME%\.dism\bin\dism.exe" /Get-ImageInfo /imagefile:"Z:\home\$USER\fr_windows_7_professional_with_sp1_x86_dvd_u_677092\sources\install.wim"
 #dism /mount-image /imagefile:"C:\Users\%USERNAME%\Downloads\Windowsextractiso\sources\install.wim" /index:1 /mountdir:c:\Mount
 #Dism /Image:C:\mount /Add-Package /PackagePath:"C:\Users\%USERNAME%\Downloads\windows10.0-kb4016635-x64_2b1b48aa6ec51c019187f15059b768b1638a21ab.msu"
 #dism /unmount-image /mountdir:c:\mount /commit
