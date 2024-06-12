@@ -1,6 +1,6 @@
 #!/bin/bash
-#require sudo dnf -y install megatools wine
-#require sudo apt-get -y install megatools wine
+#require sudo dnf -y install megatools wine winetricks
+#require sudo apt-get -y install megatools wine winetricks
 cd
 rm -rf fr_windows_7_professional_with_sp1_x86_dvd_u_677092*
 megatools dl 'http://mega.nz/#!XNxyCL4J!644FBOe8nvUWeCoEU0INsEYlCeqIhLgacXyKUKIBGJw'
