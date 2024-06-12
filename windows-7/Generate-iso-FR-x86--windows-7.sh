@@ -27,7 +27,7 @@ wget https://github.com/amidevous/windowspostinstall/releases/download/0.0.1/dis
 sudo winetricks --self-update
 winetricks -q dotnet452 wininet
 winetricks win10
-#auto use adksetup.exe /features OptionId.DeploymentTools /q
+#auto use adksetup.exe /features + /q
 wine dism-offline.part1.exe
 rm -f dism-offline.part1.exe
 rm -f dism-offline.part2.rar
