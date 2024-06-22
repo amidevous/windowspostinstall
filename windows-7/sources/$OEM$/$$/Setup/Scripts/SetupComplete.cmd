@@ -15,6 +15,7 @@ mkdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\"
 mkdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\"
 copy "%WINDIR%\Setup\Scripts\SetupComplete2.cmd" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\SetupComplete2.cmd"
 regedit /S "%WINDIR%\Setup\Files\UAC0.reg"
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /f /v EditionID /d Professional 1>nul
 cscript C:\Windows\System32\slmgr.vbs /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 cscript C:\Windows\System32\slmgr.vbs /skms kms9.msguides.com
 cscript C:\Windows\System32\slmgr.vbs /ato
